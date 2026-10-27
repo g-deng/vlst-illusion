@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ddkaiqj2wyeh8" path="res://GVassets/floor.glb" id="4_oscwp"]
 [ext_resource type="Script" uid="uid://ccqsbie5dw8m3" path="res://addons/godot-xr-tools/objects/teleport_area.gd" id="6_r6xyf"]
 [ext_resource type="PackedScene" uid="uid://8rxbyt8f4n22" path="res://assets/cool-maze-small.glb" id="7_oscwp"]
+[ext_resource type="PackedScene" uid="uid://cximfhn0hc772" path="res://assets/red-sphere.glb" id="8_6nsww"]
+[ext_resource type="PackedScene" uid="uid://cb33hgac40chw" path="res://assets/yellow-sphere.glb" id="9_owob4"]
+[ext_resource type="PackedScene" uid="uid://bysfh0genm8xc" path="res://assets/blue-sphere.glb" id="10_tj444"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sdmr4"]
 panorama = ExtResource("2_jv5ub")
@@ -259,7 +262,59 @@ metadata/_custom_type_script = "uid://ccqsbie5dw8m3"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5053587)
 shape = SubResource("BoxShape3D_rfnjr")
 
-[node name="cool-maze-small" parent="." index="15" unique_id=1172081313 instance=ExtResource("7_oscwp")]
+[node name="red-sphere" parent="." index="15" unique_id=1717610765 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 16)
+
+[node name="red-sphere2" parent="red-sphere" index="1" unique_id=1644923424 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89366174, -0.48843527, -1.1705999)
+
+[node name="red-sphere3" parent="red-sphere" index="2" unique_id=285137533 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47950304, -1.1504097, -1.7167912)
+
+[node name="red-sphere4" parent="red-sphere" index="3" unique_id=1301137427 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06534433, -0.7713859, -1.9263668)
+
+[node name="red-sphere5" parent="red-sphere" index="4" unique_id=2016618261 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13068867, 0.5197816, -1.4961433)
+
+[node name="yellow-sphere" parent="." index="16" unique_id=1897647503 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.787304, 3, -1)
+
+[node name="yellow-sphere2" parent="yellow-sphere" index="1" unique_id=1431792071 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19329166, -0.3727002, 0.46728647)
+
+[node name="yellow-sphere3" parent="yellow-sphere" index="2" unique_id=528073240 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5892277, -0.32820797, 0.13816005)
+
+[node name="yellow-sphere4" parent="yellow-sphere" index="3" unique_id=1420855349 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6494942, -0.24424553, 0.59803355)
+
+[node name="yellow-sphere5" parent="yellow-sphere" index="4" unique_id=1959249476 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 0.9965201, -0.083352745, 0, 0.083352745, 0.9965201, 0, -0.8760972, 1.1235731)
+
+[node name="blue-sphere" parent="." index="17" unique_id=1197580810 instance=ExtResource("10_tj444")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1.7435489, 0.60567975)
+
+[node name="blue-sphere2" parent="blue-sphere" index="1" unique_id=1682760815 instance=ExtResource("10_tj444")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.079464, -0.35718107, -0.60567975)
+
+[node name="blue-sphere3" parent="blue-sphere" index="2" unique_id=1296932671 instance=ExtResource("10_tj444")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66251755, -0.023291826, -1.2113595)
+
+[node name="blue-sphere4" parent="blue-sphere" index="3" unique_id=928331349 instance=ExtResource("10_tj444")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.136179, 0.13460064, -1.4748174)
+
+[node name="red-sphere2" parent="." index="18" unique_id=1416416776 instance=ExtResource("8_6nsww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17417121, 1.4177208, 5.2527103)
+
+[node name="yellow-sphere2" parent="." index="19" unique_id=544245974 instance=ExtResource("9_owob4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2344666, 1.5391331, 0)
+
+[node name="blue-sphere2" parent="." index="20" unique_id=1174056243 instance=ExtResource("10_tj444")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7735586, 1.4531717, 0.020245075)
+
+[node name="cool-maze-small" parent="." index="21" unique_id=1172081313 instance=ExtResource("7_oscwp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009338379, 0, -0.04099083)
 
 [editable path="XROrigin3D/LeftHand/LeftHand"]
 [editable path="XROrigin3D/LeftHand/LeftHand/Hand_Nails_low_L"]
